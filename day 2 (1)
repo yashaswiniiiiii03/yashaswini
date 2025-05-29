@@ -1,0 +1,275 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "452a0c3f-30fe-45a1-a93f-45967ec51709",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2, 3, 4}"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "set={1,2,3,4}\n",
+    "set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "47391769-9d15-429d-9554-bd846e13ad70",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=set.pop()\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "797bea7f-ceb2-4b1c-90d3-3966198b7648",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2, 3, 4, 5, 20, 30, 40}"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_set={1,2,3}\n",
+    "my_set.update([20,30,40])\n",
+    "my_set.update([4,5])\n",
+    "my_set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "4dff3193-7b9f-439b-b2fb-2d0c27628301",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{2, 3}"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_set={1,2,3}\n",
+    "my_set.remove(1)\n",
+    "my_set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "ebdd206d-b235-4232-b654-2512316e3e60",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{2, 3}"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "set1={1,2,3}\n",
+    "set2={4,3,2}\n",
+    "set1.intersection(set2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "5d83e781-f425-4fb0-8774-029e820956a1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "set={1,2,3}\n",
+    "len(my_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "03200d30-b9b0-4e64-87c0-d72ed72d693e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "set={1,2,3}\n",
+    "max(my_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "f6f2f1bd-9861-4859-ab02-ea4ed2a22f61",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "set={1,2,3}\n",
+    "sum(set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "bba7b111-0fcd-426c-86b2-052f358d2ecc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2, 3, 4}"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_set={1,2,3,4}\n",
+    "my_set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "1fd7b1c4-c8bd-4989-ab36-33d0e2cdf9aa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{16, 4}\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=[1,2,3,4,5]\n",
+    "even_squares_set={x**2 for x in num if x%2==0}\n",
+    "print(even_squares_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "4576ae4c-e37d-4aac-ae5c-95228a4af93e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 4, 9, 16, 25}\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=[1,2,3,4,5]\n",
+    "squares_set={x**2 for x in num}\n",
+    "print(squares_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "963ea8e1-a9c1-4d78-99b3-d891c33334d4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
