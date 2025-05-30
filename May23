@@ -1,0 +1,264 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "6018f9c9-c5b1-482c-bfd7-0d1d354d0168",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "uniform Distribution [[0.84302318 0.9826242  0.91748997]\n",
+      " [0.152004   0.12222856 0.2796017 ]\n",
+      " [0.26473092 0.9263385  0.28727767]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "uniform=np.random.rand(3,3)\n",
+    "print(\"uniform Distribution\",uniform)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "d2787ddb-3c22-4c85-8be8-3b52b4ab4f2a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(array([3, 4]),)"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "arr=np.array([1,2,3,4,5])\n",
+    "np.where(arr>3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "9e5888c1-3426-4bc9-8217-5b1f97d8dda0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Where > 3: (array([3, 4]),)\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Where > 3:\", np.where(arr > 3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "368ea899-7500-467b-a6d6-f1fd8c5455c7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.int64(4)"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.argmax(arr)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "dfad3ec0-ba33-43ab-8493-e974b4ef9a4e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.int64(3)"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sorted_arr=np.array([1,3,5,7])\n",
+    "np.searchsorted(sorted_arr,6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "8eee8542-f235-486d-af7f-1f5c8c6e0853",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([4, 5])"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "arr=np.array([1,2,3,4,5])\n",
+    "np.extract(arr>3,arr)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "539b75f6-82a5-4954-8fdd-a7009e493f87",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original:\n",
+      " [[1 2 3]\n",
+      " [4 5 6]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "matrix=np.array([[1,2,3],[4,5,6]])\n",
+    "print(\"Original:\\n\",matrix)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "265d25e2-c517-4608-9835-2e263fc3b6f4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Transposed :\n",
+      " [[1 4]\n",
+      " [2 5]\n",
+      " [3 6]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Transposed :\\n\",np.transpose(matrix))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "3866faff-7703-44df-950c-239a451550c4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "mean value:  3.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "arr=np.array([1,2,3,4,5])\n",
+    "print(\"mean value: \",np.mean(arr))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "57a7af2f-1652-4c56-b198-1ff031d785ab",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[array([1, 2]), array([3, 4]), array([5, 6])]"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "arr=np.array([1, 2, 3, 4, 5, 6])\n",
+    "np.split(arr,3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "cef28c3b-b9a6-4219-b845-986b5829ff6e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[array([1]), array([2, 3, 4]), array([5, 6])]"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.split(arr,[1,4])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "19c3ee33-51a0-4961-aa8d-c0dba83556e5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
