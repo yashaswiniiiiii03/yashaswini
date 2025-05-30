@@ -1,0 +1,247 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "348a6164-ed89-43cc-bce3-e01349b252c8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'row_id': 1, 'order_id': 'abcde', 'order_date': '14-5-2025'}"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dict={\"row_id\":1,\"order_id\":\"abcde\",\"order_date\":\"14-5-2025\"}\n",
+    "dict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "1904ac31-cb91-4ddf-bc87-7b4f2355b7c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d={\"name\":\"raj\",\"age\":50,\"gender\":\"male\"}\n",
+    "type(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "e00b672c-20fa-49aa-b2db-5ffe2291e753",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "set"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a={1,2,3,4}\n",
+    "type(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "42cce65e-ded4-407d-b847-7af132d314a8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'name': 'vini', 'age': 21, 'city': 'banglore'}"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dict={\"name\":\"vini\",\"age\":21,\"city\":\"banglore\"}\n",
+    "my_dict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "2d4b6bd4-ebf6-4e2f-b972-7fafd3d15aac",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'name': 'vini', 'age': 22, 'city': 'banglore'}"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dict[\"age\"]=22\n",
+    "my_dict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "04e094d7-9998-4784-9dd2-0659e619d368",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "34"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dict={\n",
+    "    \"name\":'john',\n",
+    "    \"age\":34,\n",
+    "    \"hobbies\":\"reading\",\n",
+    "    \"education\":\"degree\"\n",
+    "}\n",
+    "my_dict[\"age\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "13e978d0-0c65-4efe-a365-17f495bf90e3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'name': 'krishna', 'age': 20}"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dic={\"name\":'krishna','age':20}\n",
+    "my_dic"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "35fbd284-7a34-42b0-a36b-3b0f94db3644",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict_keys(['name', 'age', 'city'])"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dict={\"name\":\"krishna\",\"age\":21,\"city\":\"banglore\"}\n",
+    "my_dict.keys()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "c6c16064-a4bc-4124-946f-f7e72d2ec232",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'person1': {'name': 'alice', 'age': 34, 'city': 'new york'},\n",
+       " 'person2': {'name': 'john', 'age': 24, 'city': 'london'}}"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "nested_dict={ \n",
+    "    \"person1\":{\n",
+    "    \"name\":'alice',\n",
+    "     \"age\":34,\n",
+    "    \"city\":'new york'\n",
+    "},\n",
+    "    \"person2\":{\n",
+    "        \"name\":'john',\n",
+    "        \"age\":24,\n",
+    "        \"city\":'london'}\n",
+    "}\n",
+    "nested_dict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "13920ab4-e1b4-491a-a8d1-6177c25c6aa8",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
